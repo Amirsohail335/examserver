@@ -5,13 +5,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 //import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-//import java.util.Collection;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "users")
-public  class User {
+
+public class User {
 //public class User implements UserDetails {
 
     @Id
@@ -91,11 +92,11 @@ public  class User {
 //    public boolean isCredentialsNonExpired() {
 //        return true;
 //    }
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
-//
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
 //    @Override
 //    public Collection<? extends GrantedAuthority> getAuthorities() {
 //
